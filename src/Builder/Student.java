@@ -1,18 +1,33 @@
 package Builder;
 
-public class Student {
-
-    private final int m_studentNo;
-    private final int m_age;
+/**
+ * A Student Builder Class
+ *
+ * @Usage
+ * Student jackson = new Student.Builder()
+ *                              .withStudentNo(1)
+ *                              .withAge(24)
+ *                              .withName("Jackson")
+ *                              .withGender(Gender.MALE)
+ *                              .withTitle(Title.ASSISTANT_CLASS_MONITOR)
+ *                              .build();
+ * @author Andy Chen
+ */
+public class Student
+{
     private final String m_name;
-    private final String m_gender;
+    private final int    m_studentNo;
+    private final int    m_age;
+    private final Gender m_gender;
+    private final Title  m_title;
 
     private Student(final Builder builder)
     {
+        this.m_name      = builder.m_name;
         this.m_studentNo = builder.m_studentNo;
-        this.m_age = builder.m_age;
-        this.m_name = builder.m_name;
-        this.m_gender = builder.m_gender;
+        this.m_age       = builder.m_age;
+        this.m_gender    = builder.m_gender;
+        this.m_title     = builder.m_title;
     }
 
     public int getStudentNo()
@@ -30,17 +45,49 @@ public class Student {
         return this.m_name;
     }
 
-    public String getGender()
+    public Gender getGender()
     {
         return this.m_gender;
     }
 
+    public Title getTitle()
+    {
+        return this.m_title;
+    }
+
+    @Override
+    public int hashCode()
+    {
+        return m_studentNo;
+    }
+
+    @Override
+    public String toString()
+    {
+        return "{ name: "+ m_name +", studentNo: "+ m_studentNo +", age: "+ m_age +", gender: "+ m_gender.toString() +", title: "+ m_title.toString() +" }";
+    }
+
+    @Override
+    public boolean equals(Object o)
+    {
+        if (this == o) return true;
+
+        if (null == o || getClass() != o.getClass())
+        {
+            return false;
+        }
+
+        Student that = (Student) o;
+        return that.getStudentNo() == this.getStudentNo();
+    }
+
     public static class Builder
     {
-        private int m_age;
-        private int m_studentNo;
         private String m_name;
-        private String m_gender;
+        private int    m_age;
+        private int    m_studentNo;
+        private Gender m_gender;
+        private Title  m_title;
 
         public Builder withStudentNo(int nStudentNo)
         {
@@ -60,9 +107,15 @@ public class Student {
             return this;
         }
 
-        public Builder withGender(String sGender)
+        public Builder withGender(Gender gender)
         {
-            this.m_gender = sGender;
+            this.m_gender = gender;
+            return this;
+        }
+
+        public Builder withTitle(Title title)
+        {
+            this.m_title = title;
             return this;
         }
 
