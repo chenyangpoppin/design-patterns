@@ -1,6 +1,6 @@
 <h2>Java Design Patterns</h2>
 <p>
-  An implementation of design patterns with Java code
+  An implementation of design patterns with Java code.
 </p>
 
 <h2>Contact</h2>
