@@ -3,7 +3,7 @@
   An implementation of design patterns with Java code. The design patterns include Builder, Abstract Factory, Adapter, Bridge, Singleton, Chain, DAO, Fascade, Dependency Injection etc. These design patterns can be divided into three categories as follows:
 </p>
 
-<h3>Creational Patterns</h3>
+<strong>Creational Patterns</strong>
 <ul>
   <li>Abstract factory</li>
   <li>Builder</li>
@@ -12,7 +12,7 @@
   <li>Singleton</li>
 </ul>
 
-<h3>Structural Patterns</h3>
+<strong>Structural Patterns</strong>
 <ul>
   <li>Adapter</li>
   <li>Bridge</li>
@@ -23,7 +23,7 @@
   <li>Proxy</li>
 </ul>
 
-<h3>Behavioral Patterns</h3>
+<strong>Behavioral Patterns</strong>
 <ul>
   <li>Chain of responsibility</li>
   <li>Command</li>
