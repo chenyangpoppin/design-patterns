@@ -4,39 +4,15 @@
 </p>
 
 <strong>Creational Patterns</strong>
-<ul>
-  <li>Abstract factory</li>
-  <li>Builder</li>
-  <li>Factory method</li>
-  <li>Prototype</li>
-  <li>Singleton</li>
-</ul>
+<p>
+Abstract factory, Builder, Factory method, Prototype, Singleton
+</p>
 
 <strong>Structural Patterns</strong>
-<ul>
-  <li>Adapter</li>
-  <li>Bridge</li>
-  <li>Composite</li>
-  <li>Decorator</li>
-  <li>Facade</li>
-  <li>Flyweight</li>
-  <li>Proxy</li>
-</ul>
+<p>Adapter, Bridge, Composite, Decorator, Facade, Flyweight, Proxy</p>
 
 <strong>Behavioral Patterns</strong>
-<ul>
-  <li>Chain of responsibility</li>
-  <li>Command</li>
-  <li>Interpreter</li>
-  <li>Iterator</li>
-  <li>Mediator</li>
-  <li>Memento</li>
-  <li>Observer</li>
-  <li>State</li>
-  <li>Strategy</li>
-  <li>Template</li>
-  <li>Visitor</li>
-</ul>
+<p>Chain of responsibility, Command, Interpreter, Iterator, Mediator, Memento, Observer, State, Strategy, Template, Visitor</p>
 
 <h2>Contact</h2>
 <p>
