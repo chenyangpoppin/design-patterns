@@ -2,10 +2,15 @@ import Builder.Gender;
 import Builder.Student;
 import Builder.Title;
 
+/**
+ * Entry point class for the whole application
+ *
+ * @author Andy Chen
+ */
 public class Main
 {
-    // Entry point file for the whole application
     public static void main(String[] args) {
+        // Eg 1: Builder design pattern usage
         Student jackson = new Student.Builder()
                                      .withStudentNo(1)
                                      .withAge(24)
